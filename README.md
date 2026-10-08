@@ -57,10 +57,10 @@ outlook-email-exporter/
 
 This repository is prepared for:
 
-- GitHub user: `AndreLees`
+- GitHub user: `KungFuWombat`
 - Repository: `outlook-email-exporter`
-- Hosted URL: `https://andrelees.github.io/outlook-email-exporter/`
-- Task pane: `https://andrelees.github.io/outlook-email-exporter/taskpane.html`
+- Hosted URL: `https://kungfuwombat.github.io/outlook-email-exporter/`
+- Task pane: `https://kungfuwombat.github.io/outlook-email-exporter/taskpane.html`
 
 The production `manifest.xml` already points to that URL.
 
@@ -94,12 +94,12 @@ In GitHub:
 
 **Repository → Settings → Pages → Build and deployment → Source → GitHub Actions**
 
-The included workflow publishes only the `web` directory.
+The included workflow publishes only the `web` directory. The root `manifest.xml` is installed from the repository file; it is not published at the Pages `/manifest.xml` URL. Manifest-only changes do not trigger a Pages deployment because they do not change the hosted files.
 
 After the workflow succeeds, the add-in files will be available at:
 
 ```text
-https://andrelees.github.io/outlook-email-exporter/
+https://kungfuwombat.github.io/outlook-email-exporter/
 ```
 
 ## 4. Install the production manifest in Outlook
